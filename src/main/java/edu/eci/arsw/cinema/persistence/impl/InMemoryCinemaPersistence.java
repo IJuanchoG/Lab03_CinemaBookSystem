@@ -13,7 +13,10 @@ import edu.eci.arsw.cinema.persistence.CinemaPersistenceException;
 import edu.eci.arsw.cinema.persistence.CinemaPersitence;
 import org.springframework.stereotype.Component;
 
+import java.lang.reflect.Array;
 import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  *
@@ -39,26 +42,28 @@ public class InMemoryCinemaPersistence implements CinemaPersitence{
     @Override
     public void buyTicket(int row, int col, String cinema, String date, String movieName) throws CinemaException {
 
-        /*List<CinemaFunction> cinemaFunctions = cinemas.get(cinema).getFunctions();
+        List<CinemaFunction> cinemaFunctions =cinemas.get(cinema).getFunctions();
         Optional<CinemaFunction> cf = cinemaFunctions.stream().filter(cinemaFunction -> {
             if(cinemaFunction.getMovie().getName().equals(movieName) && cinemaFunction.getDate().equals(date)) {
-                return cinemaFunction;
+                return true;
             }
-        });*/
-        List<CinemaFunction> functions = cinemas.get(cinema).getFunctions();
-        for (CinemaFunction cf : functions){
-            if(cf.getMovie().getName().equals(movieName) && cf.getDate().equals(date)){
-                cf.buyTicket(row, col);
-            }
+            return false;
+        }).findFirst();
+        if(cf.isPresent()){
+            CinemaFunction cinemaFunction = cf.get();
+            cinemaFunction.buyTicket(row, col);
+            System.out.println("Compra exitosa, para la funcion: "+cinemaFunction.getMovie().getName()+" con horario: "+cinemaFunction.getDate());
+        }else{
+            throw new CinemaException(CinemaPersistenceException.NO_FOUND_CINEMA_FUNCTION);
         }
-
-
-        throw new CinemaException(CinemaPersistenceException.NO_FOUND_CINEMA_FUNCTION);
     }
 
     @Override
     public List<CinemaFunction> getFunctionsbyCinemaAndDate(String cinema, String date) {
-        throw new UnsupportedOperationException("Not supported yet."); 
+        List<CinemaFunction> cinemaFunctions = cinemas.get(cinema).getFunctions();
+        List<CinemaFunction> cinemaFunctionList =
+                cinemaFunctions.stream().filter(cinemaFunction -> cinemaFunction.getDate().equals(date)).collect(Collectors.toList());
+        return cinemaFunctionList;
     }
 
     @Override
