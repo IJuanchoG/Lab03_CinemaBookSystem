@@ -81,4 +81,9 @@ public class InMemoryCinemaPersistence implements CinemaPersitence{
         return cinemas.get(name);
     }
 
+    @Override
+    public Set<Cinema> getAllCinemas() throws CinemaPersistenceException {
+        return (Set<Cinema>) cinemas.values();
+    }
+
 }

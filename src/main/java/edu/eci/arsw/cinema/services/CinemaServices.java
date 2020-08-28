@@ -37,7 +37,12 @@ public class CinemaServices {
     }
     
     public Set<Cinema> getAllCinemas(){
-        return null;
+        try {
+            return cps.getAllCinemas();
+        } catch (CinemaPersistenceException e) {
+            e.printStackTrace();
+            return null;
+        }
     }
     
     /**
