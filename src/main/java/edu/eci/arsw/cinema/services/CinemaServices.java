@@ -73,5 +73,8 @@ public class CinemaServices {
         return cps.getFunctionsbyCinemaAndDate(cinema,date);
     }
 
+    public List<String[]> getFunctionsByGenre(String genre){
+        return cps.getFunctionsbyGenre(genre);
+    }
 
 }

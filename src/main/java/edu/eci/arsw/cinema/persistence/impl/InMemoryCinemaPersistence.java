@@ -86,4 +86,17 @@ public class InMemoryCinemaPersistence implements CinemaPersitence{
         return (Set<Cinema>) cinemas.values();
     }
 
+    @Override
+    public List<String[]> getFunctionsbyGenre(String genre) {
+        Collection<Cinema> allcinemas = cinemas.values();
+         List<String[]> info = new LinkedList<>();
+        allcinemas.forEach(cinema -> {
+            cinema.getFunctions().forEach(x -> {
+                if(x.getMovie().getGenre().equals(genre)){
+                    info.add(new String[]{cinema.getName(),x.getMovie().getName(), x.getDate()});
+                };
+            });
+        });
+        return info;
+    }
 }
