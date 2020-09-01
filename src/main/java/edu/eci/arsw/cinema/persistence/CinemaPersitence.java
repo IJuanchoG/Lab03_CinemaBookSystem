@@ -59,5 +59,6 @@ public interface CinemaPersitence {
      */
     public Set<Cinema> getAllCinemas() throws  CinemaPersistenceException;
 
-    List<String[]> getFunctionsbyGenre(String genre);
+
+
 }

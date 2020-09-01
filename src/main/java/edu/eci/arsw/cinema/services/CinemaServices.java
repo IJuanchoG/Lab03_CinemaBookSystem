@@ -5,6 +5,8 @@
  */
 package edu.eci.arsw.cinema.services;
 
+import edu.eci.arsw.cinema.filter.CinemaFilter;
+import edu.eci.arsw.cinema.filter.CinemaFilterException;
 import edu.eci.arsw.cinema.model.Cinema;
 import edu.eci.arsw.cinema.model.CinemaFunction;
 import edu.eci.arsw.cinema.persistence.CinemaException;
@@ -17,16 +19,32 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 /**
+ * The type Cinema services.
  *
  * @author cristian
  */
 @Service
 public class CinemaServices {
 
+    /**
+     * The Cps.
+     */
     @Autowired
     @Qualifier("InMemoryCinema")
     CinemaPersitence cps=null;
-    
+
+    /**
+     * The Filter.
+     */
+    @Autowired
+     @Qualifier("FilterByGender")
+    CinemaFilter filter;
+
+    /**
+     * Add new cinema.
+     *
+     * @param c the c
+     */
     public void addNewCinema(Cinema c) {
         try {
             cps.saveCinema(c);
@@ -35,7 +53,12 @@ public class CinemaServices {
         }
 
     }
-    
+
+    /**
+     * Get all cinemas set.
+     *
+     * @return the set
+     */
     public Set<Cinema> getAllCinemas(){
         try {
             return cps.getAllCinemas();
@@ -44,9 +67,10 @@ public class CinemaServices {
             return null;
         }
     }
-    
+
     /**
-     * 
+     * Gets cinema by name.
+     *
      * @param name cinema's name
      * @return the cinema of the given name created by the given author
      * @throws CinemaException
@@ -59,8 +83,17 @@ public class CinemaServices {
         }
         return null;
     }
-    
-    
+
+
+    /**
+     * Buy ticket.
+     *
+     * @param row       the row
+     * @param col       the col
+     * @param cinema    the cinema
+     * @param date      the date
+     * @param movieName the movie name
+     */
     public void buyTicket(int row, int col, String cinema, String date, String movieName){
         try {
             cps.buyTicket(row, col, cinema, date, movieName);
@@ -68,13 +101,32 @@ public class CinemaServices {
             e.printStackTrace();
         }
     }
-    
+
+    /**
+     * Gets functionsby cinema and date.
+     *
+     * @param cinema the cinema
+     * @param date   the date
+     * @return the functionsby cinema and date
+     */
     public List<CinemaFunction> getFunctionsbyCinemaAndDate(String cinema, String date) {
         return cps.getFunctionsbyCinemaAndDate(cinema,date);
     }
 
-    public List<String[]> getFunctionsByGenre(String genre){
-        return cps.getFunctionsbyGenre(genre);
+    /**
+     * Get functions by filter list.
+     *
+     * @param property the property
+     * @return the list
+     */
+    public List<String[]> getFunctionsByFilter(String property){
+        List<String[]> functions = null;
+        try{
+           functions =  filter.filterBy(property, getAllCinemas());
+        } catch (CinemaFilterException e){
+            e.printStackTrace();
+        }
+        return functions;
     }
 
 }

@@ -13,10 +13,8 @@ import edu.eci.arsw.cinema.persistence.CinemaPersistenceException;
 import edu.eci.arsw.cinema.persistence.CinemaPersitence;
 import org.springframework.stereotype.Component;
 
-import java.lang.reflect.Array;
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  *
@@ -26,6 +24,8 @@ import java.util.stream.Stream;
 public class InMemoryCinemaPersistence implements CinemaPersitence{
     
     private final Map<String,Cinema> cinemas=new HashMap<>();
+
+
 
     public InMemoryCinemaPersistence() {
         //load stub data
@@ -86,17 +86,5 @@ public class InMemoryCinemaPersistence implements CinemaPersitence{
         return (Set<Cinema>) cinemas.values();
     }
 
-    @Override
-    public List<String[]> getFunctionsbyGenre(String genre) {
-        Collection<Cinema> allcinemas = cinemas.values();
-         List<String[]> info = new LinkedList<>();
-        allcinemas.forEach(cinema -> {
-            cinema.getFunctions().forEach(x -> {
-                if(x.getMovie().getGenre().equals(genre)){
-                    info.add(new String[]{cinema.getName(),x.getMovie().getName(), x.getDate()});
-                };
-            });
-        });
-        return info;
-    }
+
 }
