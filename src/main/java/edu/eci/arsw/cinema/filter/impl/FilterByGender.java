@@ -11,6 +11,9 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * The type Filter by gender.
+ */
 @Component("FilterByGender")
 public class FilterByGender  implements CinemaFilter{
 

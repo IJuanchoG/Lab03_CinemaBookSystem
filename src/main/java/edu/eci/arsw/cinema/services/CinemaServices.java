@@ -20,8 +20,6 @@ import org.springframework.stereotype.Service;
 
 /**
  * The type Cinema services.
- *
- * @author cristian
  */
 @Service
 public class CinemaServices {
@@ -71,9 +69,8 @@ public class CinemaServices {
     /**
      * Gets cinema by name.
      *
-     * @param name cinema's name
-     * @return the cinema of the given name created by the given author
-     * @throws CinemaException
+     * @param name the name
+     * @return the cinema by name
      */
     public Cinema getCinemaByName(String name) {
         try {
@@ -116,6 +113,8 @@ public class CinemaServices {
     /**
      * Get functions by filter list.
      *
+     * @param cinema   the cinema
+     * @param date     the date
      * @param property the property
      * @return the list
      */

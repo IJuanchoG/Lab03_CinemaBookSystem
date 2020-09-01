@@ -14,8 +14,8 @@ public interface CinemaFilter {
     /**
      * Filter by list.
      *
-     * @param property the property
-     * @param cinemas  the cinemas
+     * @param functions the functions
+     * @param property  the property
      * @return the list
      * @throws CinemaFilterException the cinema filter exception
      */

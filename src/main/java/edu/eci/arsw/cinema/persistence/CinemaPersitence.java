@@ -11,51 +11,53 @@ import java.util.List;
 import java.util.Set;
 
 /**
- *
- * @author cristian
+ * The interface Cinema persitence.
  */
 public interface CinemaPersitence {
-    
+
     /**
-     * 
-     * @param row the row of the seat
-     * @param col the column of the seat
-     * @param cinema the cinema's name
-     * @param date the date of the function
-     * @param movieName the name of the movie
-     * 
-     * @throws CinemaException if the seat is occupied,
-     *    or any other low-level persistence error occurs.
+     * Buy ticket.
+     *
+     * @param row       the row
+     * @param col       the col
+     * @param cinema    the cinema
+     * @param date      the date
+     * @param movieName the movie name
+     * @throws CinemaException the cinema exception
      */
     public void buyTicket(int row, int col, String cinema, String date, String movieName) throws CinemaException;
-    
+
     /**
-     * 
-     * @param cinema cinema's name
-     * @param date date
-     * @return the list of the functions of the cinema in the given date
+     * Gets functionsby cinema and date.
+     *
+     * @param cinema the cinema
+     * @param date   the date
+     * @return the functionsby cinema and date
      */
     public List<CinemaFunction> getFunctionsbyCinemaAndDate(String cinema, String date);
-    
+
     /**
-     * 
-     * @param cinema new cinema
-     * @throws  CinemaPersistenceException n if a cinema with the same name already exists
+     * Save cinema.
+     *
+     * @param cinema the cinema
+     * @throws CinemaPersistenceException the cinema persistence exception
      */
     public void saveCinema(Cinema cinema) throws CinemaPersistenceException;
-    
+
     /**
-     * 
-     * @param name name of the cinema
-     * @return Cinema of the given name
-     * @throws  CinemaPersistenceException if there is no such cinema
+     * Gets cinema.
+     *
+     * @param name the name
+     * @return the cinema
+     * @throws CinemaPersistenceException the cinema persistence exception
      */
     public Cinema getCinema(String name) throws CinemaPersistenceException;
 
     /**
+     * Gets all cinemas.
      *
-     * @return All cinemas
-     * @throws CinemaPersistenceException if there isn't  any cinema
+     * @return the all cinemas
+     * @throws CinemaPersistenceException the cinema persistence exception
      */
     public Set<Cinema> getAllCinemas() throws  CinemaPersistenceException;
 

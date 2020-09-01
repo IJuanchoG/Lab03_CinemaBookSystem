@@ -17,8 +17,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- *
- * @author cristian
+ * The type In memory cinema persistence.
  */
 @Component("InMemoryCinema")
 public class InMemoryCinemaPersistence implements CinemaPersitence{
@@ -26,7 +25,9 @@ public class InMemoryCinemaPersistence implements CinemaPersitence{
     private final Map<String,Cinema> cinemas=new HashMap<>();
 
 
-
+    /**
+     * Instantiates a new In memory cinema persistence.
+     */
     public InMemoryCinemaPersistence() {
         //load stub data
         String functionDate = "2018-12-18 15:30";
