@@ -11,5 +11,6 @@ public class CinemaUI {
         CinemaServices cs = ac.getBean(CinemaServices.class);
         cs.buyTicket(1,1,"cinemaX","2018-12-18 15:30","The Night");
         cs.getFunctionsbyCinemaAndDate("cinemaX", "2018-12-18 15:30").forEach(x -> System.out.println(x.getMovie().getName()));
+        cs.getFunctionsByFilter("cinemaX","2018-12-18 15:30","Action").forEach(x -> System.out.println("Filtrado por Genero: "+x.getMovie().getName()));
     }
 }

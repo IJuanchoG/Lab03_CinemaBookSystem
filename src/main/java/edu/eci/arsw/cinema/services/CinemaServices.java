@@ -119,10 +119,11 @@ public class CinemaServices {
      * @param property the property
      * @return the list
      */
-    public List<String[]> getFunctionsByFilter(String property){
-        List<String[]> functions = null;
+    public List<CinemaFunction> getFunctionsByFilter(String cinema, String date, String property){
+        List<CinemaFunction> functions = getFunctionsbyCinemaAndDate(cinema, date);
+
         try{
-           functions =  filter.filterBy(property, getAllCinemas());
+           functions =  filter.filterBy(functions, property);
         } catch (CinemaFilterException e){
             e.printStackTrace();
         }

@@ -1,6 +1,7 @@
 package edu.eci.arsw.cinema.filter;
 
 import edu.eci.arsw.cinema.model.Cinema;
+import edu.eci.arsw.cinema.model.CinemaFunction;
 
 import java.util.List;
 import java.util.Set;
@@ -18,5 +19,5 @@ public interface CinemaFilter {
      * @return the list
      * @throws CinemaFilterException the cinema filter exception
      */
-    List<String[]> filterBy(String property, Set<Cinema> cinemas) throws CinemaFilterException;
+    List<CinemaFunction> filterBy(List<CinemaFunction> functions,String property) throws CinemaFilterException;
 }

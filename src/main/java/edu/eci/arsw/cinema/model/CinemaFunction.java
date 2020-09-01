@@ -60,5 +60,12 @@ public class CinemaFunction {
         this.date = date;
     }
 
-
+    @Override
+    public String toString() {
+        return "CinemaFunction{" +
+                "movie=" + movie.getName() +
+                ", genre=" + movie.getGenre() +
+                ", date='" + date + '\'' +
+                '}';
+    }
 }

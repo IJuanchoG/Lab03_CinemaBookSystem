@@ -5,16 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0b9b946-61a5-4290-9f91-8d6327ac4fb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/intellij-javadocs-4.0.1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/cinema/filter/CinemaFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/cinema/filter/CinemaFilterException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/cinema/filter/impl/FilterByAvailability.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/cinema/filter/impl/FilterByGender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/FilterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cinema_REST_API.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Cinema_REST_API.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/cinema/persistence/CinemaPersitence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/cinema/persistence/CinemaPersitence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/cinema/persistence/impl/InMemoryCinemaPersistence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/cinema/persistence/impl/InMemoryCinemaPersistence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/cinema/filter/CinemaFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/cinema/filter/CinemaFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/cinema/filter/impl/FilterByAvailability.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/cinema/filter/impl/FilterByAvailability.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/cinema/filter/impl/FilterByGender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/cinema/filter/impl/FilterByGender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/cinema/model/CinemaFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/cinema/model/CinemaFunction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/cinema/services/CinemaServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/cinema/services/CinemaServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/cinema/ui/CinemaUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/cinema/ui/CinemaUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,12 +60,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../ECI/9NO SEMESTRE/AREP/LAB/ClientServer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.FilterTest">
     <configuration name="CinemaUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.eci.arsw.cinema.ui.CinemaUI" />
       <module name="Cinema_REST_API" />
@@ -70,13 +73,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FilterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Cinema_REST_API" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FilterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FilterTest.debeFiltrarPorDisponibilidad" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Cinema_REST_API" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FilterTest" />
+      <option name="METHOD_NAME" value="debeFiltrarPorDisponibilidad" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InMemoryPersistenceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Cinema_REST_API" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="InMemoryPersistenceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FilterTest" />
         <item itemvalue="Application.CinemaUI" />
+        <item itemvalue="JUnit.FilterTest.debeFiltrarPorDisponibilidad" />
+        <item itemvalue="JUnit.InMemoryPersistenceTest" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringBeansView">
     <option name="beanDetailsProportion" value="0.3" />
   </component>
@@ -102,10 +136,14 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="361" y="91" key="#Project_Structure/0.0.1536.864@0.0.1536.864" timestamp="1598918434229" />
-    <state x="535" y="64" key="#com.intellij.ide.util.MemberChooser" timestamp="1598920086993">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state x="93" y="93" width="1095" height="495" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1598928473842">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1598709806557" />
+    <state x="93" y="93" width="1095" height="495" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1280.680@0.0.1280.680" timestamp="1598928473842" />
+    <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser" timestamp="1598928137311">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1598928137311" />
     <state x="535" y="64" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1598920086993" />
     <state x="321" y="77" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1598558976302">
       <screen x="0" y="0" width="1280" height="680" />
@@ -123,22 +161,26 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1598739506980" />
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1598586714491">
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1598928123352">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1598586714491" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1598586714491">
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1598928123352" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1598928123352">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1598586714491" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1598586714491">
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1598928123352" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1598928123351">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1598586714491" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1598586714491">
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1598928123351" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1598928123352">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1598586714491" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1598928123352" />
+    <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1598927700667">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="171" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680@0.0.1280.680" timestamp="1598927700667" />
     <state x="121" y="0" key="SettingsEditor" timestamp="1598474192408">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -148,6 +190,10 @@
     </state>
     <state x="336" y="210" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1598663874188" />
     <state x="403" y="267" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1598915985570" />
+    <state x="417" y="99" key="refactoring.ChangeSignatureDialog" timestamp="1598926291952">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="417" y="99" key="refactoring.ChangeSignatureDialog/0.0.1280.680@0.0.1280.680" timestamp="1598926291952" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1598709747161">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
