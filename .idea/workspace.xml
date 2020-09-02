@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0b9b946-61a5-4290-9f91-8d6327ac4fb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/FilterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cinema_REST_API.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Cinema_REST_API.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/cinema/filter/CinemaFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/cinema/filter/CinemaFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/cinema/filter/impl/FilterByAvailability.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/cinema/filter/impl/FilterByAvailability.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/cinema/filter/impl/FilterByGender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/cinema/filter/impl/FilterByGender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/cinema/model/CinemaFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/cinema/model/CinemaFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/cinema/services/CinemaServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/cinema/services/CinemaServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/cinema/ui/CinemaUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/cinema/ui/CinemaUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +48,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GRAMMAR-CHECKER/GRAMMAR-CHECKER" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -136,10 +124,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="361" y="91" key="#Project_Structure/0.0.1536.864@0.0.1536.864" timestamp="1598918434229" />
-    <state x="93" y="93" width="1095" height="495" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1598928473842">
+    <state x="93" y="93" width="1095" height="495" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1598928995465">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="93" y="93" width="1095" height="495" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1280.680@0.0.1280.680" timestamp="1598928473842" />
+    <state x="93" y="93" width="1095" height="495" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1280.680@0.0.1280.680" timestamp="1598928995465" />
     <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser" timestamp="1598928137311">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -157,26 +145,26 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="234" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1598923761350" />
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1598739506980">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1599021393043">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1598739506980" />
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1598928123352">
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1599021393043" />
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1598928814961">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1598928123352" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1598928123352">
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1598928814961" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1598928814960">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1598928123352" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1598928123351">
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1598928814960" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1598928814960">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1598928123351" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1598928123352">
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1598928814960" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1598928814960">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1598928123352" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1598928814960" />
     <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1598927700667">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
